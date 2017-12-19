@@ -60,8 +60,8 @@
 .icon-th-list:before {
     content: "\f00b";
 }
-.icon-check:before {
-    content: "\f00c";
+.icon-food:before {
+    src: url("../images\food.png");
 }
 .icon-close:before {
     content: "\f00d";
@@ -2514,4 +2514,3 @@
 .icon-dribbble2:before {
     content: "\e063";
 }
-
