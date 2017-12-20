@@ -39,6 +39,12 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+
+
+
+
+
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
@@ -56,11 +62,16 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+
+
+
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+
+
 
 	</head>
 	<body>
@@ -191,8 +202,41 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
 						<div class="fh5co-intro fh5co-table-cell">
-							<h1 class="text-center">Neapsakomai skanu</h1>
-							<p>Norisi grįžti dar ir dar</p>
+							<h1 class="text-center">Rezervacija</h1>
+							<div class="reservationDate">
+				  		 <div class="input-lg">
+								<div class="input-group input-group-lg" type="date" data-provide="datepicker">
+									<input type="text" class="form-control">
+									<div class="input-group-addon">
+										<span class="glyphicon glyphicon-th"></span>
+									</div>
+								 </div>
+								</div>
+							 </div>
+							<div class="reservation-time">
+									<select class="input-lg">
+										<option value="time1">16:00</option>
+										<option value="time2">18:00</option>
+										<option value="time3">21:00</option>
+								 </select>
+							</div>
+							 <div class="reservation-persons">
+									<select class="input-lg">
+										<option value="2pers">2 asmenims</option>
+										<option value="3pers">3 asmenims</option>
+										<option value="4pers">4 asmenims</option>
+										<option value="5pers">5 asmenims</option>
+										<option value="6pers">6 asmenims</option>
+										<option value="7pers">7 asmenims</option>
+										<option value="8pers">8 asmenims</option>
+										<option value="9pers">9 asmenims</option>
+										<option value="10pers">10 asmenų</option>
+									</select>
+								</div>
+								<div class="button-reservate">
+									<button type="button" class="btn btn-success btn-md" onclick="alert('Rezervuota!')">Rezervuoti</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -201,12 +245,11 @@
 
 		<div class="fh5co-section">
 			<div class="container">
-
 				<div class="row">
 					<div class="col-md-12">
 						<div class="row">
 							<div class="col-md-6">
-								<h2>Rezervacija</h2>
+								<h2>Įvertintas skonis</h2>
 							</div>
 						</div>
 					</div>
@@ -223,10 +266,7 @@
 						</p>
 					</div>
 				</div>
-
 			</div>
-		</div>
-
 	</div> <!-- END fh5co-wrap -->
 
 
@@ -271,6 +311,7 @@
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar -->
@@ -279,4 +320,5 @@
 	<script src="js/main.js"></script>
 
 	</body>
+
 </html>

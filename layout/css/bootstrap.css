@@ -162,6 +162,14 @@ html input[disabled] {
   cursor: default;
 }
 
+div[class^="reservationDate"],
+div[class^="reservation-time"],
+div[class^="reservation-persons"],
+div[class^="button-reservate"] {
+  display: inline-block;
+}
+
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -3134,7 +3142,7 @@ output {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 50%;
   height: 42px;
   padding: 10px 20px;
   font-size: 14px;
