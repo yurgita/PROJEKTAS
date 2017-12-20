@@ -2,6 +2,12 @@
 <!DOCTYPE html>
 <html class="no-js">
 	<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Receptai</title>
@@ -16,16 +22,11 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
-
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 
-	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Icomoon Icon Fonts-->
@@ -48,16 +49,16 @@
 					<div class="container">
 						<nav class="fh5co-main-nav">
 							<ul>
-								<li><a href="index.html"><span>Home</span></a></li>
-								<li class="fh5co-active"><a href="services.html"><span>Services</span></a></li>
-								<li><a href="about.html"><span>About</span></a></li>
-								<li><a href="contact.html"><span>Contact</span></a></li>
+								<li><a href="index.html"><span>Pagrindinis</span></a></li>
+								<li class="fh5co-active"><a href="services.html"><span>Receptai</span></a></li>
+								<li><a href="about.html"><span>Kolektyvas</span></a></li>
+								<li><a href="contact.html"><span>Susisiekti</span></a></li>
 							</ul>
 						</nav>
 					</div>
 				</header>
 
-				<div class="fh5co-hero" style="background-image: url(foto/Patiekalai/1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="fh5co-hero" style="background-image: url(Patiekalai/1.jpg);" data-stellar-background-ratio="0.5">
 					<div class="overlay"></div>
 					<div class="container">
 						<div class="row">
@@ -69,7 +70,23 @@
 						</div>
 					</div>
 				</div>
-				<div class="fh5co-section">
+
+				<div class="Pasirinkimai">
+				<form class="form-inline">
+				  <label class="mr-sm-2" for="inlineFormCustomSelectPref">Kategorija</label>
+				  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+				    <option selected>Pasirinkite...</option>
+				    <option value="1">Salotos</option>
+				    <option value="2">Sriubos</option>
+				    <option value="3">Antrieji patiekalai</option>
+						<option value="4">Desertai</option>
+				  </select>
+
+				  <button type="submit" class="btn btn-primary">Rodyti</button>
+				</form>
+				</div>
+
+				<div class="fh5co-section" id="salotos">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -82,16 +99,17 @@
 									<li>alyvuogių aliejus</li>
 									<li>druska, juodieji pipirai</li>
 								</ul>
-								<p>Gaminimas: lėkštėse išdėliojame burokėlių riekeles, ant viršaus dedame trupintą fetą, rukolą, alyvuoges. Pašlakstome alyvuogių aliejumi, citrinų sultimis ir pagardiname druska bei juodaisiais pipirais.</p>
+								<p>Gaminimas: lėkštėse išdėliojame burokėlių riekeles, ant viršaus dedame trupintą fetą, rukolą, alyvuoges.
+									Pašlakstome alyvuogių aliejumi, citrinų sultimis ir pagardiname druska bei juodaisiais pipirais.</p>
 							</div>
 							<div class="col-md-7">
-								<img src="foto/Patiekalai/2.jpg" class="img-responsive">
+								<img src="Patiekalai/2.jpg" class="img-responsive">
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="fh5co-section">
+				<div class="fh5co-section" id="desertas">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -100,39 +118,43 @@
 									<li>400 g. kokoso drožlių</li>
 									<li>1 indelis kondensuoto pieno</li>
 								</ul>
-								<p>Gaminimas: Sumaišome kokoso drožles su kondensuotu pienu, paliekame pabrinkti apie 30 min. Formuojame rutuliukus ir kepame sviestu išteptoje skardoje, 200 laipsnių temperatūroje apie 10 min.</p>
+								<p>Gaminimas: Sumaišome kokoso drožles su kondensuotu pienu, paliekame pabrinkti apie 30 min.
+									Formuojame rutuliukus ir kepame sviestu išteptoje skardoje, 200 laipsnių temperatūroje apie 10 min.</p>
 							</div>
 							<div class="col-md-7">
-								<img src="foto/Patiekalai/4.jpg" class="img-responsive">
+								<img src="Patiekalai/4.jpg" class="img-responsive">
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="fh5co-section">
+				<div class="fh5co-section" id="antrasis patiekalas">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
-								<h2>Kokosiniai rutuliukai</h2>
+								<h2>Orkaitėje keptos bulvės su fetos įdaru</h2>
 								<ul class="fh5co-check">
-									<li>500 g. fusilli makaronų</li>
-									<li>3 česnako skiltelės</li>
-									<li>1 čili pipiras</li>
-									<li>2 brokolių galvos</li>
-									<li>kietasis sūris</li>
-									<li>sviestas</li>
-									<li>druska, juodieji pipira</li>
+									<li>8 didelės bulvės</li>
+									<li>200 g. fetos sūrio</li>
+									<li>keletas juodų alyvuogių</li>
+									<li>3 skiltelės česnako</li>
+									<li>sviesto</li>
+									<li>aliejaus</li>
+									<li>druska, juodieji pipirai, raudonėlis</li>
 								</ul>
-								<p>Gaminimas: Išverdame makaronus. Tuo pat metu kitame puode į verdantį pasūdytą vandenį sudedame sulaužytus brokolių žiedynus ir verdame 5 min. Į įkaitintą keptuvę dedame sviesto ir trumpai pakepiname smulkintus česnakus bei čili pipirus, vėliau dedame brokolius ir dar kelias minutes pakepinus dedame makaronus. Pabarstome kietuoju sūriu, druska ir pipirais.</p>
+								<p>Gaminimas: Neskustas bulves švariai nuplauname, nusausiname ir ištriname aliejumi, druska bei pipirais.
+									Bulves dedame į kepimo skardą ir kepame 200 laipsnių orkaitėje 1 - 1,5 val.
+									Įdarui sutrupiname fetos sūrį ir sumaišome su smolkintomis alyvuogėmis, česnaku ir raudonėliu.
+									Iškepusias bulves įpjauname skersai ir išilgai (padaliname į 4 dalis), paspaudę visus keturis kampus praveriame, dedame po gabalėlį sviesto, fetos įdaro ir dedame į orkaitę dar 10 minučių, kad išsilydytų sūris.</p>
 							</div>
 							<div class="col-md-7">
-								<img src="foto/Patiekalai/7.jpg" class="img-responsive">
+								<img src="Patiekalai/9.jpg" class="img-responsive">
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="fh5co-section">
+				<div class="fh5co-section" id="sriuba">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -148,20 +170,23 @@
 									<li>sėklų mišinys (pabarstyti)</li>
 									<li>druska, juodieji pipira</li>
 								</ul>
-								<p>Gaminimas: Nuluptus ir pjaustytus burokėlius verdame sultinyje ~40 min. Kol verda burokėliai keptuvėje pakepiname imbierą, česnakus, morkas su svogūnais ir karį. Išvirus burokėliams keptuvės turinį supilame į puodą ir viską paverdame dar 10 min. Pabaigoje supilame grietinėlę, dedame druskos, pipirų ir viską sutriname iki vientisos masės.</p>
+								<p>Gaminimas: Nuluptus ir pjaustytus burokėlius verdame sultinyje ~40 min.
+									Kol verda burokėliai keptuvėje pakepiname imbierą, česnakus, morkas su svogūnais ir karį.
+									Išvirus burokėliams keptuvės turinį supilame į puodą ir viską paverdame dar 10 min.
+									Pabaigoje supilame grietinėlę, dedame druskos, pipirų ir viską sutriname iki vientisos masės.</p>
 							</div>
 							<div class="col-md-7">
-								<img src="foto/Patiekalai/8.jpg" class="img-responsive">
+								<img src="Patiekalai/8.jpg" class="img-responsive">
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="fh5co-section">
+				<div class="fh5co-section" id="antrasis patiekalas">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
-								<h2>Kokosiniai rutuliukai</h2>
+								<h2>Makaronai su brokoliais</h2>
 								<ul class="fh5co-check">
 									<li>500 g. fusilli makaronų</li>
 									<li>3 česnako skiltelės</li>
@@ -171,10 +196,40 @@
 									<li>sviestas</li>
 									<li>druska, juodieji pipira</li>
 								</ul>
-								<p>Gaminimas: Išverdame makaronus. Tuo pat metu kitame puode į verdantį pasūdytą vandenį sudedame sulaužytus brokolių žiedynus ir verdame 5 min. Į įkaitintą keptuvę dedame sviesto ir trumpai pakepiname smulkintus česnakus bei čili pipirus, vėliau dedame brokolius ir dar kelias minutes pakepinus dedame makaronus. Pabarstome kietuoju sūriu, druska ir pipirais.</p>
+								<p>Gaminimas: Išverdame makaronus.
+									Tuo pat metu kitame puode į verdantį pasūdytą vandenį sudedame sulaužytus brokolių žiedynus ir verdame 5 min.
+									Į įkaitintą keptuvę dedame sviesto ir trumpai pakepiname smulkintus česnakus bei čili pipirus, vėliau dedame brokolius ir dar kelias minutes pakepinus dedame makaronus.
+									Pabarstome kietuoju sūriu, druska ir pipirais.</p>
 							</div>
 							<div class="col-md-7">
-								<img src="foto/Patiekalai/7.jpg" class="img-responsive">
+								<img src="Patiekalai/7.jpg" class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fh5co-section" id="salotos">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5">
+								<h2>Šiltos perlinių kruopų ir moliūgo salotos</h2>
+								<ul class="fh5co-check">
+									<li>300 g. perlinių kruopų</li>
+									<li>2 porai</li>
+									<li>2 česnako skiltelės</li>
+									<li>1 čili pipiras</li>
+									<li>600 g. moliūgo</li>
+									<li>50 g. kietojo sūrio</li>
+									<li>alyvuogių aliejus</li>
+									<li>druska, juodieji pipirai, petražolės</li>
+								</ul>
+								<p>Gaminimas: Perlines kruopas mirkome per naktį ir išverdame pasūdytame vandenyje.
+									Moliūgą supjaustome kubeliais, pašlakstome aliejumi, druska, pipirais ir kepame 180 laipsnių orkaitėje ~15 min.
+									Keptuvėje pakepiname čili pipirą, česnakus ir porus. Viską sumaišome, pašlakstome alyvuogių aliejumi, pagardiname druska, pipirais, petražolėmis ir kietuoju sūriu.
+								</p>
+							</div>
+							<div class="col-md-7">
+								<img src="Patiekalai/17.jpg" class="img-responsive">
 							</div>
 						</div>
 					</div>
@@ -182,29 +237,28 @@
 
 			</div> <!-- END fh5co-wrap -->
 
-
 	<footer id="fh5co-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<h3>About Us</h3>
-					<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.</p>
+					<h3>Apie mus</h3>
+					<p>Esame išskirtinio vegetariško maisto restoranas Vilniuje.</p>
 				</div>
 				<div class="col-md-3 col-md-push-1">
-					<h3>Quick Links</h3>
+					<h3>Nuorodos</h3>
 					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#">Pagrindinis</a></li>
+						<li><a href="#">Kolektyvas</a></li>
+						<li><a href="#">Paslaugos</a></li>
+						<li><a href="#">Blogas</a></li>
+						<li><a href="#">Kontaktai</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-md-push-1">
-					<h3>Follow Us</h3>
+					<h3>Sekite mus</h3>
 					<ul class="fh5co-social">
 						<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
-						<li><a href="#"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/Masala-1148025128609710/"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
 						<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
 						<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
 					</ul>

@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *	Edit this section
 *
 * ======================================================= */
@@ -184,6 +184,22 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #fff;
 }
 
+.form-inline{
+  font-family: "Work Sans", Arial, sans-serif;
+  padding: 20px;
+}
+
+.mr-sm-2{
+  font-family: "Work Sans", Arial, sans-serif;
+  font-color: black;
+}
+
+.Pasirinkimai{
+  padding: 20px;
+  font-family: "Work Sans", Arial, sans-serif;
+  font-size: 18pt;
+}
+
 .fh5co-table,
 .fh5co-table-cell,
 .fh5co-hero,
@@ -247,6 +263,12 @@ h1, h2, h3, h4, h5, h6 {
 .fh5co-section {
   padding: 5em 0;
 }
+
+.row{
+  border-bottom: 5px;
+  border-color: black;
+}
+
 @media screen and (max-width: 768px) {
   .fh5co-section {
     padding: 3em 0;
