@@ -238,7 +238,7 @@
 					<p>Sekite mūsų naujienas ir receptus.</p>
 				  <form action="index.html" method="post" class="subscribe-form">
 					 <input type="email" name="email" class="subscribe-input" placeholder="El. pašto adresas" autofocus>
-					 <button type="submit" class="subscribe-submit">Užsakyti</button>
+					 <button type="submit" class="subscribe-submit" onclick="alert('Naujienos užsakytos!')">Užsakyti</button>
 				  </form>
 			   </section>
 			  </div>
@@ -256,7 +256,7 @@
 
 				<div class="col-md-3 col-md-push-1">
 					<h3>Sekite mus</h3>
-					<ul class="fh5co-social">
+					 <ul class="fh5co-social">
 						<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
 						<li><a href="#"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
 						<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
@@ -275,7 +275,10 @@
 
 	<script type="text/javascript">
 		$('.date').datepicker({
-			format: 'yyyy-mm-dd'
+			format: 'yyyy-mm-dd',
+			daysOfWeekDisabled: [1,2],
+			startDate: new Date(),
+			weekStart: 1
 		});
 	</script>
 
@@ -291,9 +294,7 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
-	<script src="" charset="utf-8">
-
- 	</script>
+	<script src="" charset="utf-8"></script>
 
 
 	</body>

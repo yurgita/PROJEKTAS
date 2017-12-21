@@ -17,6 +17,7 @@
 	function UTCDate(){
 		return new Date(Date.UTC.apply(Date, arguments));
 	}
+
 	function UTCToday(){
 		var today = new Date();
 		return UTCDate(today.getFullYear(), today.getMonth(), today.getDate());
@@ -103,6 +104,7 @@
 		this.picker = $(DPGlobal.template);
 
 		// Checking templates and inserting
+
 		if (this._check_template(this.o.templates.leftArrow)) {
 			this.picker.find('.prev').html(this.o.templates.leftArrow);
 		}
@@ -134,6 +136,7 @@
 
 		this._allow_update = false;
 
+
 		this.setStartDate(this._o.startDate);
 		this.setEndDate(this._o.endDate);
 		this.setDaysOfWeekDisabled(this.o.daysOfWeekDisabled);
@@ -147,6 +150,7 @@
 
 		this.update();
 		this.showMode();
+
 
 		if (this.isInline){
 			this.show();
@@ -870,8 +874,8 @@
 				cls.push('disabled');
 			}
 			if (this.dateIsDisabled(date)){
-				cls.push('disabled', 'disabled-date');	
-			} 
+				cls.push('disabled', 'disabled-date');
+			}
 			if ($.inArray(date.getUTCDay(), this.o.daysOfWeekHighlighted) !== -1){
 				cls.push('highlighted');
 			}
@@ -1641,6 +1645,7 @@
 		}
 	};
 
+
 	function opts_from_el(el, prefix){
 		// Derive options from element data-attrs
 		var data = $(el).data(),
@@ -1751,7 +1756,7 @@
 		startView: 0,
 		todayBtn: false,
 		todayHighlight: false,
-		weekStart: 0,
+		weekStart: 1,
 		disableTouchKeyboard: false,
 		enableOnReadonly: true,
 		showOnFocus: true,
