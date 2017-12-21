@@ -40,7 +40,6 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 	</head>
 	<body>
 
@@ -51,7 +50,7 @@
 							<ul>
 								<li><a href="index.html"><span>Pagrindinis</span></a></li>
 								<li class="fh5co-active"><a href="services.html"><span>Receptai</span></a></li>
-								<li><a href="about.html"><span>Kolektyvas</span></a></li>
+								<li><a href="about.html"><span>Apie mus</span></a></li>
 								<li><a href="contact.html"><span>Susisiekti</span></a></li>
 							</ul>
 						</nav>
@@ -71,22 +70,24 @@
 					</div>
 				</div>
 
-				<div class="Pasirinkimai">
-				<form class="form-inline">
-				  <label class="mr-sm-2" for="inlineFormCustomSelectPref">Kategorija</label>
-				  <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
-				    <option selected>Pasirinkite...</option>
-				    <option value="1">Salotos</option>
-				    <option value="2">Sriubos</option>
-				    <option value="3">Antrieji patiekalai</option>
-						<option value="4">Desertai</option>
-				  </select>
-
-				  <button type="submit" class="btn btn-primary">Rodyti</button>
-				</form>
+				<div class="Kategorija">
+				<div class="col-md-3">
+					<form>
+						<div class="form-group">
+							<select id="kategorijos" class="form-control">
+								<option selected>Pasirinkite kategoriją:</option>
+								<option value="1">Sriubos</option>
+								<option value="2">Salotos</option>
+								<option value="3">Antrieji patiekalai</option>
+								<option value="4">Desertai</option>
+								<option value="5">Visi patiekalai</option>
+							</select>
+						</div>
+					</form>
+				</div>
 				</div>
 
-				<div class="fh5co-section" id="salotos">
+				<div class="fh5co-section" id=patiekalai2>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -109,7 +110,7 @@
 					</div>
 				</div>
 
-				<div class="fh5co-section" id="desertas">
+				<div class="fh5co-section" id=patiekalai4>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -128,7 +129,7 @@
 					</div>
 				</div>
 
-				<div class="fh5co-section" id="antrasis patiekalas">
+				<div class="fh5co-section" id=patiekalai3>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -154,7 +155,7 @@
 					</div>
 				</div>
 
-				<div class="fh5co-section" id="sriuba">
+				<div class="fh5co-section" id=patiekalai1>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -182,7 +183,7 @@
 					</div>
 				</div>
 
-				<div class="fh5co-section" id="antrasis patiekalas">
+				<div class="fh5co-section" id=patiekalai33>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -208,7 +209,7 @@
 					</div>
 				</div>
 
-				<div class="fh5co-section" id="salotos">
+				<div class="fh5co-section" id=patiekalai22>
 					<div class="container">
 						<div class="row">
 							<div class="col-md-5">
@@ -248,17 +249,17 @@
 					<h3>Nuorodos</h3>
 					<ul>
 						<li><a href="#">Pagrindinis</a></li>
-						<li><a href="#">Kolektyvas</a></li>
-						<li><a href="#">Paslaugos</a></li>
+						<li><a href="#">Receptai</a></li>
+						<li><a href="#">Apie mus</a></li>
 						<li><a href="#">Blogas</a></li>
-						<li><a href="#">Kontaktai</a></li>
+						<li><a href="#">Susisiekime</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-md-push-1">
 					<h3>Sekite mus</h3>
 					<ul class="fh5co-social">
 						<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
-						<li><a href="https://www.facebook.com/Masala-1148025128609710/"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
+						<li><a href="https://www.facebook.com/Masala-1148025128609710/" target=" Blank"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
 						<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
 						<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
 					</ul>
@@ -270,6 +271,31 @@
 		</div>
 	</footer>
 
+	<script src="js/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		$("#kategorijos").change(function(){
+			$("[id^='patiekalai']").hide();
+			switch ($("#kategorijos").val()) {
+				case "1":
+					$("#patiekalai1").fadeIn();
+					break;
+				case "2":
+					$("#patiekalai2, #patiekalai22").fadeIn();
+					break;
+				case "3":
+					$("#patiekalai3, #patiekalai33").fadeIn();
+					break;
+				case "4":
+					$("#patiekalai4").fadeIn();
+					break;
+				case "5":
+					$("#patiekalai1, #patiekalai2, #patiekalai22, #patiekalai3, #patiekalai33, #patiekalai4").fadeIn();
+					break;
+			}
+		})
+
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
