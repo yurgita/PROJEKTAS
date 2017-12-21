@@ -27,42 +27,18 @@
 	//////////////////////////////////////////////////////
 	 -->
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
 
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
 
 
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
-
-
-	<!-- Modernizr JS -->
-
-
-
-
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
+	<link rel="stylesheet" href="css/mystyle.css">
 
 
 	</head>
@@ -112,12 +88,10 @@
 						<div class="video-responsive">
     				<iframe width="560" height="315" src="https://www.youtube.com/embed/D75oziNpQ5M" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
-
 		<div class="fh5co-parallax" style="background-image: url(foto/vegetarian-food.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
@@ -136,7 +110,6 @@
 
 		<div class="fh5co-section">
 			<div class="container">
-
 				<div class="row">
 					<div class="col-md-6">
 						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
@@ -160,7 +133,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="col-md-6">
 						<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
 							<div class="fh5co-icon">
@@ -183,48 +155,48 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
-
 			</div>
 		</div>
 
-
 		<div class="fh5co-parallax" style="background-image: url(foto/vegetarian-food2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
+		 <div class="overlay"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-						<div class="fh5co-intro fh5co-table-cell">
+						<div class="fh5co-intro fh5co-table-cell new">
 							<h1 class="text-center">Rezervacija</h1>
-							<div class="reservationDate">
-
-							 </div>
-							<div class="reservation-time">
+							<div class="datepicker input-group date" data-provide="datepicker">
+								<input type="text" class="form-control" placeholder="Pasirinkite datą">
+								  <div class="input-group-addon">
+									  <span class="glyphicon glyphicon-th"></span>
+								  </div>
+						   </div>
+							 <div class="reservation-time">
 									<select class="input-lg">
 										<option value="time1">16:00</option>
 										<option value="time2">18:00</option>
 										<option value="time3">21:00</option>
 								 </select>
 							</div>
-							 <div class="reservation-persons">
+							<div class="reservation-persons">
 									<select class="input-lg">
-										<option value="2pers">2 asmenims</option>
-										<option value="3pers">3 asmenims</option>
-										<option value="4pers">4 asmenims</option>
-										<option value="5pers">5 asmenims</option>
-										<option value="6pers">6 asmenims</option>
-										<option value="7pers">7 asmenims</option>
-										<option value="8pers">8 asmenims</option>
-										<option value="9pers">9 asmenims</option>
+										<option value="2pers">2 asmenys</option>
+										<option value="3pers">3 asmenys</option>
+										<option value="4pers">4 asmenys</option>
+										<option value="5pers">5 asmenys</option>
+										<option value="6pers">6 asmenys</option>
+										<option value="7pers">7 asmenys</option>
+										<option value="8pers">8 asmenys</option>
+										<option value="9pers">9 asmenys</option>
 										<option value="10pers">10 asmenų</option>
 									</select>
-								</div>
-								<div class="button-reservate">
-									<button type="button" class="btn btn-success btn-md" onclick="alert('Rezervuota!')">Rezervuoti</button>
-								</div>
+							</div>
+							<div class="button-reservate">
+							 <button type="button" class="btn btn-success btn-md" onclick="alert('Rezervuota!')">Rezervuoti</button>
 							</div>
 						</div>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -257,14 +229,20 @@
 
 	</div> <!-- END fh5co-wrap -->
 
-
 	<footer id="fh5co-footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<h3>Apie mus</h3>
-					<p>Esame išskirtinio vegetariško maisto restoranas Vilniuje.</p>
-				</div>
+				<div class="col-md-5">
+				 <section class="subscribe">
+					<h3>Naujienlaiškis</h3>
+					<p>Sekite mūsų naujienas ir receptus.</p>
+				  <form action="index.html" method="post" class="subscribe-form">
+					 <input type="email" name="email" class="subscribe-input" placeholder="El. pašto adresas" autofocus>
+					 <button type="submit" class="subscribe-submit">Užsakyti</button>
+				  </form>
+			   </section>
+			  </div>
+
 				<div class="col-md-3 col-md-push-1">
 					<h3>Nuorodos</h3>
 					<ul>
@@ -275,6 +253,7 @@
 						<li><a href="#">Susisiekime</a></li>
 					</ul>
 				</div>
+
 				<div class="col-md-3 col-md-push-1">
 					<h3>Sekite mus</h3>
 					<ul class="fh5co-social">
@@ -285,13 +264,21 @@
 					</ul>
 				</div>
 			</div>
-			<div class="row">
-
-			</div>
-		</div>
+		 <div class="row">
+	  </div>
+	 </div>
 	</footer>
 
 	<!-- jQuery -->
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+
+	<script type="text/javascript">
+		$('.date').datepicker({
+			format: 'yyyy-mm-dd'
+		});
+	</script>
+
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
@@ -306,7 +293,7 @@
 
 	<script src="" charset="utf-8">
 
- </script>
+ 	</script>
 
 
 	</body>

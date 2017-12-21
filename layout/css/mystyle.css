@@ -1,0 +1,40 @@
+div[class^="fh5co-intro fh5co-table-cell new"] {
+  width: 500px;
+}
+
+.datepicker-inline {
+  width: 160px;
+  height: 38px;
+}
+
+.input-group {
+  display: inline-table;
+  width: auto;
+
+}
+
+.form-control {
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+div[class^="reservation-time"] {
+  display: inline-block;
+}
+
+div[class^="reservation-persons"] {
+  display: inline-block;
+}
+
+div[class^="button-reservate"] {
+  display: inline-block;
+}
+
+div[class^="input-group-addon"] {
+  height: 40px;
+}
+
+.btn-md {
+  border-radius: 5px;
+}
