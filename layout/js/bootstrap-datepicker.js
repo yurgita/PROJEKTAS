@@ -1756,7 +1756,7 @@
 		startView: 0,
 		todayBtn: false,
 		todayHighlight: false,
-		weekStart: 1,
+		weekStart: 0,
 		disableTouchKeyboard: false,
 		enableOnReadonly: true,
 		showOnFocus: true,
