@@ -194,11 +194,6 @@ h1, h2, h3, h4, h5, h6 {
   font-color: black;
 }
 
-.Pasirinkimai{
-  padding: 20px;
-  font-family: "Work Sans", Arial, sans-serif;
-  font-size: 18pt;
-}
 
 .fh5co-table,
 .fh5co-table-cell,
@@ -221,6 +216,10 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   background: black;
   opacity: .2;
+}
+
+.Kategorija{
+  padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
