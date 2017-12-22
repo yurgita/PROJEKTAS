@@ -51,7 +51,7 @@
 								<li><a href="index.html"><span>Pagrindinis</span></a></li>
 								<li class="fh5co-active"><a href="services.html"><span>Receptai</span></a></li>
 								<li><a href="about.html"><span>Apie mus</span></a></li>
-								<li><a href="contact.html"><span>Susisiekti</span></a></li>
+								<li><a href="contact.html"><span>Kontaktai</span></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -237,6 +237,33 @@
 					</div>
 				</div>
 
+				<div class="fh5co-section" id=patiekalai11>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5">
+								<h2>Trinta žiedinių kopūstų ir sūrio sriuba</h2>
+								<ul class="fh5co-check">
+									<li>2 svogūnai</li>
+									<li>2 morkos</li>
+									<li>2 česnako skiltelės</li>
+									<li>1 žiedinis kopūstas</li>
+									<li>1,2 l. daržovių sultinio</li>
+									<li>150 g. kokybiško fermentinio sūrio</li>
+									<li>1 a.š. dižono garstyčių</li>
+									<li>druska, juodieji pipirai, muskato riešuto</li>
+								</ul>
+								<p>Aliejuje pakepinti kubeliais pjaustytas morkas, svogūnus, česakus ir supilti į verdantį sultinį.
+									Ten pat sudėti žiedynais sulaužytą žiedinį kopūstą ir virti 10 min.
+									Suberti tarkuotą sūrį, garstyčias, prieskonius ir sutrinti sriubą elektrine trintuve.
+								</p>
+							</div>
+							<div class="col-md-7">
+								<img src="Patiekalai/16.jpg" class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div> <!-- END fh5co-wrap -->
 
 	<footer id="fh5co-footer">
@@ -249,11 +276,11 @@
 				<div class="col-md-3 col-md-push-1">
 					<h3>Nuorodos</h3>
 					<ul>
-						<li><a href="#">Pagrindinis</a></li>
-						<li><a href="#">Receptai</a></li>
-						<li><a href="#">Apie mus</a></li>
+						<li><a href="index.html">Pagrindinis</a></li>
+						<li><a href="services.html">Receptai</a></li>
+						<li><a href="about.html">Apie mus</a></li>
 						<li><a href="#">Blogas</a></li>
-						<li><a href="#">Susisiekime</a></li>
+						<li><a href="contact.html">Susisiekime</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-md-push-1">
@@ -279,7 +306,7 @@
 			$("[id^='patiekalai']").hide();
 			switch ($("#kategorijos").val()) {
 				case "1":
-					$("#patiekalai1").fadeIn();
+					$("#patiekalai1, #patiekalai11").fadeIn();
 					break;
 				case "2":
 					$("#patiekalai2, #patiekalai22").fadeIn();
@@ -291,7 +318,7 @@
 					$("#patiekalai4").fadeIn();
 					break;
 				case "5":
-					$("#patiekalai1, #patiekalai2, #patiekalai22, #patiekalai3, #patiekalai33, #patiekalai4").fadeIn();
+					$("#patiekalai1, #patiekalai11, #patiekalai2, #patiekalai22, #patiekalai3, #patiekalai33, #patiekalai4").fadeIn();
 					break;
 			}
 		})
